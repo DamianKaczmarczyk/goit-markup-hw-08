@@ -1,0 +1,51 @@
+.team {
+    background-color:$button-background-color;
+  &__icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  &__icon--link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    display: flex;
+    padding: 12px;
+    fill: rgba(175, 177, 184, 1);
+  &:hover,
+  &:focus {
+    background:$main-color;
+    fill:$focus-color;
+  }
+  }
+  &__title {
+    font-weight: 500;
+    line-height: 1.187;
+    color:$secondary-color;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+  }
+  &__subtitle {
+    line-height: 1.187;
+    color:$navigation-color;
+    text-align: center;
+  }
+
+  &__card {
+    background-color:$focus-color;
+    display: inline-block;
+    justify-content: space-between;
+    width: 270px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+      0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+  }
+  &__cards {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+  }
+}

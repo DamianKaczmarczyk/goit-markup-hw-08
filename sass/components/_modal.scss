@@ -1,0 +1,163 @@
+.modal {
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  background-color:$focus-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: fixed;
+  z-index: 1;
+  transition-property: visibility, opacity, transform;
+  transition-duration: 2s;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+  display: inline-block;
+  align-content: center;
+
+  &__close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border-radius: 50%;
+    padding: 6px;
+    fill: rgba(0, 0, 0, 1);
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   &__close:hover {
+    fill:$main-color;
+    border-color:$main-color;
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__title {
+    font-family:$main-font;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 40px;
+  }
+  &__button {
+    padding: 10px 76px;
+    background:$main-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-family:$main-font;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color:$focus-color;
+    margin: 0 164px 40px 164px;
+  }
+
+}
+.control {
+  margin-left: 40px;
+  margin-bottom:10px;
+
+  &__link {
+    color:$main-color;
+  }
+  &__textarea {
+    width: 448px;
+    height: 120px;
+    margin-top: 4px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    resize: none;
+    outline: none;
+  
+  &:focus {
+    border-color:$main-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  }
+  &__input {
+    display:flex;
+    position: relative;
+    padding-left:42px;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    &:focus-within {
+      border-color: $main-color;
+      fill: $main-color;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover {
+      outline: none;
+    }
+  }
+
+&__label {
+  position:relative;
+  margin-top: 4px;
+}
+&__svg {
+  fill: $secondary-color;
+  position: absolute;
+  top: 32px;
+  left: 15px;
+
+}
+&__span {
+  font-family:$main-font;
+  font-size: 14px;
+  line-height: 24px;
+  color:$navigation-color;
+  padding-left: 27px;
+}
+&__checkbox {
+  appearance: none;
+  &--label {
+    position: relative;
+    cursor: pointer;
+    &::before {
+      position: absolute;
+      display: block;
+      bottom: 2px;
+      content: '';
+      width: 16px;
+      height: 15px;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Cpath fill='%23212121' d='M14.222 1.667v11.666H1.778V1.667h12.444Zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0Z'/%3E%3C/svg%3E");
+    }
+  }
+}
+}
+  .control__checkbox:checked + .control__checkbox--label::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Crect width='16' height='15' fill='%232196F3' rx='2'/%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-width='.2' d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z'/%3E%3C/svg%3E");
+    background-position: center;
+    border: none;
+  }
+  .control:focus-within svg {
+    fill:$main-color;
+  }
+  .is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .backdrop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transition: visibility 0.5s linear, opacity 0.5s linear;
+  }

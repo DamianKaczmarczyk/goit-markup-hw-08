@@ -1,0 +1,25 @@
+.clients{
+&__items {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    fill: rgba(175, 177, 184, 1);
+    justify-content: space-between;
+  }
+  &__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: rgba(175, 177, 184, 1);
+
+  &:hover,
+  &:focus {
+    fill:$main-color;
+    border-color:$main-color;
+  }
+}
+}

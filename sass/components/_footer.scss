@@ -1,0 +1,122 @@
+.footer {
+  background:$hero-item-background-color;
+  padding: 60px 0;
+  display: flex;
+
+ &__blocks {
+  display: flex;
+ }
+ &__left {
+  padding-right: 70px;
+ }
+  &__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  &--span {
+    color: rgba(255, 255, 255, 1);
+  }
+  }
+  &__contact{
+  &--item {
+    padding-bottom: 9px;;
+  }
+  &--adress {
+    font-style: normal;
+    font-family:$main-font;
+    color:$focus-color;
+    &:hover,
+    &:focus {
+      color:$main-color;
+    }
+  }
+  &--mailphone {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    &:hover,
+    &:focus {
+      color:$main-color;
+    }
+  }
+  }
+  &__social {
+  padding-right: 78px;
+  margin-top: 12px;
+  &__--title {
+    font-family:$main-font;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color:$focus-color;
+    text-transform: uppercase;
+  }
+  &--link {
+    width: 44x;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    fill:$focus-color;
+    &:hover,
+    &:focus {
+      background:$main-color;
+      fill:$focus-color;
+    }
+  }
+  }
+  &__form{
+  box-sizing: border-box;
+  flex-direction: column;
+  margin-top: 12px;
+  }
+  &__newsletter {
+  display: flex;
+  margin-top: 20px;
+  margin-right: 12px;
+  &--input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px 16px;
+    background: #2f303a;
+  }
+  }
+  &__btn {
+  position: relative;
+  padding: 10px 76px 10px 42px;
+  background-color:$main-color;
+  color:$focus-color;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  margin-left: 12px;
+  text-align: center;
+  align-items: center;
+  &--svg {
+    fill:$focus-color;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 13px;
+    right: 28px;
+  }
+  }
+  &__icons {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+  }
+  &__title {
+    font-family:$main-font;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color:$focus-color;
+    text-transform: uppercase;
+  }
+}
