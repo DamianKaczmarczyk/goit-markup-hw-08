@@ -1,6 +1,6 @@
 .filters {
     display: flex;
-    justify-content: center;
+    //justify-content: center;
     margin-bottom: 50px;
   &__button {
     font-family:$main-font;
@@ -11,7 +11,7 @@
     color:$secondary-color;
     background-color:$button-background-color;
     border-radius: 4px;
-    margin-right: 8px;
+    //margin-right: 8px;
     border: none;
 
     &:hover,
@@ -22,4 +22,8 @@
       0 3px 1px 0 rgba(0, 0, 0, 0.1);
   }
     }
+  @include tablet {
+    justify-content: center;
+    min-width: 100%;
   }
+}

@@ -1,6 +1,6 @@
 .headline {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/img-bg.jpg);
+      url(../images/header-tel.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -16,19 +16,57 @@
     color:$focus-color;
     padding: 10px 41px 10px 42px;
     margin-top: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 118px;
     border-radius: 4px;
     border: none;
   }
   &__title {
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 60px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color:$focus-color;
     margin: 0 auto;
-    width: 696px;
-    margin-top: 200px;
+    margin-top: 118px;
+  }
+  @include tablet {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-tablet.jpg);
+    &__wrapper {
+      padding: 118px 186px;
+    }
+  }
+  @include desktop {
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-desk.jpg);
+    &__wrapper {
+      padding: 200px 0;
+    }
+    &__title {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .headline {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-tel-x2.jpg);
+  }
+  @include tablet {
+    .headline {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-tablet-x2.jpg);
+    }
+  }
+  @include desktop {
+    .headline {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-desk-x2.jpg);
+    }
   }
 }

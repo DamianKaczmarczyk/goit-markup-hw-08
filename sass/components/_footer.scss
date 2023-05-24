@@ -1,22 +1,29 @@
 .footer {
   background:$hero-item-background-color;
-  padding: 60px 0;
+  //padding: 60px 0;
   display: flex;
+  flex-wrap: wrap;
 
  &__blocks {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
  }
- &__left {
-  padding-right: 70px;
- }
+ //&__left {
+  //padding-right: 70px;
+ //}
   &__logo {
   display: inline-block;
+  margin-top: 60px;
   margin-bottom: 20px;
   &--span {
     color: rgba(255, 255, 255, 1);
   }
   }
   &__contact{
+    justify-content: center;
+    margin-bottom: 60px;
   &--item {
     padding-bottom: 9px;;
   }
@@ -39,9 +46,13 @@
   }
   }
   &__social {
-  padding-right: 78px;
-  margin-top: 12px;
+    display:flex;
+  //padding-right: 78px;
+  //margin-top: 12px;
+  margin-bottom:60px;
+  justify-content: center;
   &__--title {
+    align-items: center;
     font-family:$main-font;
     font-size: 14px;
     font-weight: 700;
@@ -51,6 +62,7 @@
     text-transform: uppercase;
   }
   &--link {
+    align-items: center;
     width: 44x;
     height: 44px;
     border-radius: 50%;
@@ -66,11 +78,12 @@
   }
   }
   &__form{
+    display:flex;
   box-sizing: border-box;
   flex-direction: column;
-  margin-top: 12px;
   }
   &__newsletter {
+    flex-wrap: wrap;
   display: flex;
   margin-top: 20px;
   margin-right: 12px;
@@ -81,6 +94,8 @@
     border-radius: 4px;
     padding: 15px 16px;
     background: #2f303a;
+    margin-bottom: 20px;
+    color:$focus-color;
   }
   }
   &__btn {
@@ -97,6 +112,7 @@
   text-align: center;
   align-items: center;
   &--svg {
+    display:flex;
     fill:$focus-color;
     width: 24px;
     height: 24px;
@@ -118,5 +134,51 @@
     letter-spacing: 0.03em;
     color:$focus-color;
     text-transform: uppercase;
+    display:flex;
+    justify-content: center;
+  }
+  @include tablet {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__contact {
+      margin-right: 144px;
+    }
+    &__newsletter-input {
+      width: 450px;
+    }
+  }
+  @include desktop {
+    &__wrapper {
+      flex-wrap: nowrap;
+      align-items: baseline;
+      gap: 69px;
+    }
+    &__contact {
+      margin-right: 0;
+    }
+    &__contact,
+    &__social {
+      text-align: left;
+      margin-bottom: 0;
+    }
+    &__contact-items {
+      text-align: left;
+    }
+    &__form {
+      width: 570px;
+      text-align: left;
+    }
+    &__newsletter {
+      flex-direction: row;
+      align-items: baseline;
+    }
+    &__newsletter-input {
+      width: 358px;
+      margin-right: 12px;
+    }
   }
 }

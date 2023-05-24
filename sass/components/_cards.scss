@@ -1,8 +1,8 @@
 .card {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
+    justify-content: center;
+    //flex-wrap: wrap;
+    //gap: 30px;
     &__img {
       position: relative;
       overflow: hidden;
@@ -58,30 +58,16 @@
       }
     }
   }
-}
-.cards {
-  position: relative;
-  overflow: hidden;
-  background-color: #fff;
-  justify-content: center;
-  text-align: center;
-  &__item {
-    position: relative;
+  @include tablet {
+    gap: 30px;
+    &__item {
+      flex-basis: calc((100% - 2 * 30px) / 3);
+      text-align: left;
+    }
   }
-  & > .cards__text {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    padding: 27px;
-    background-color: rgba(47, 48, 58, 0.8);
-    color: #fff;
+  @include desktop {
+    &__items {
+      flex-wrap: nowrap;
+    }
   }
 }
-
-
-  .offer {
-    display: flex;
-    column-gap: 30px;
-    justify-content: space-between;
-  }
