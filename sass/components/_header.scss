@@ -14,9 +14,6 @@
 }
   .page-header {
     border-bottom: 1px solid #ececec;
-    background-color:$focus-color;
-    justify-content: center;
-    display: flex;
     &__svg{   
       position: absolute;
       top: 10px;
@@ -39,7 +36,7 @@
     font-style:$main-font;
     color:$navigation-color;
     font-weight: 500;
-    &--link{  
+    &-link{  
       font-style:$main-font;
       color:$navigation-color;
       font-weight: 500;
@@ -48,7 +45,7 @@
         color:$main-color;
       }
     }
-    &--item{  
+    &-item{  
       font-style:$main-font;
       color:$navigation-color;
       font-weight: 500;
@@ -63,10 +60,10 @@
     gap: 50px;
     fill:$navigation-color;
     justify-content: center;
-    &--svg {
+    &-svg {
       margin-right: 10px;
     }
-    &--list {
+    &-list {
       display: flex;
       align-items: center;
       &:hover,
@@ -75,7 +72,7 @@
         fill:$main-color;
       }
     }
-    &--item{
+    &-item{
       font-style:$main-font;
       color:$navigation-color;
       font-weight: 500;
