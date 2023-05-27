@@ -3,9 +3,11 @@
   //padding: 60px 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 
  &__blocks {
-  display: flex;
+  display:block;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 60px;
@@ -22,12 +24,12 @@
   }
   }
   &__contact{
-    justify-content: center;
     margin-bottom: 60px;
   &--item {
-    padding-bottom: 9px;;
+    padding-bottom: 9px;
   }
   &--adress {
+
     font-style: normal;
     font-family:$main-font;
     color:$focus-color;
@@ -62,13 +64,14 @@
     text-transform: uppercase;
   }
   &--link {
-    align-items: center;
+    display:flex;
     width: 44x;
     height: 44px;
     border-radius: 50%;
     padding: 12px;
     background-color: rgba(255, 255, 255, 0.1);
-    display: flex;
+    justify-content: center;
+    align-items: center;
     fill:$focus-color;
     &:hover,
     &:focus {
@@ -81,6 +84,7 @@
     display:flex;
   box-sizing: border-box;
   flex-direction: column;
+  justify-content: center;
   }
   &__newsletter {
     flex-wrap: wrap;
@@ -88,7 +92,7 @@
   margin-top: 20px;
   margin-right: 12px;
   &--input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -99,6 +103,7 @@
   }
   }
   &__btn {
+    align-self: center;
   position: relative;
   padding: 10px 76px 10px 42px;
   background-color:$main-color;
@@ -108,11 +113,10 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  margin-left: 12px;
+  //margin-left: 12px;
   text-align: center;
   align-items: center;
   &--svg {
-    display:flex;
     fill:$focus-color;
     width: 24px;
     height: 24px;
