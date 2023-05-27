@@ -139,7 +139,7 @@
     color:$focus-color;
     text-transform: uppercase;
     display:flex;
-    justify-content: center;
+    text-align: center;
   }
   @include tablet {
     &__wrapper {
