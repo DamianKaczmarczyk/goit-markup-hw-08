@@ -2,12 +2,10 @@
   background:$hero-item-background-color;
   //padding: 60px 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+
   text-align: center;
 
  &__blocks {
-  display:block;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 60px;
@@ -16,7 +14,6 @@
   //padding-right: 70px;
  //}
   &__logo {
-  display: inline-block;
   margin-top: 60px;
   margin-bottom: 20px;
   &--span {
@@ -48,13 +45,10 @@
   }
   }
   &__social {
-    display:flex;
   //padding-right: 78px;
   //margin-top: 12px;
   margin-bottom:60px;
-  justify-content: center;
   &__--title {
-    align-items: center;
     font-family:$main-font;
     font-size: 14px;
     font-weight: 700;
@@ -62,17 +56,13 @@
     letter-spacing: 0.03em;
     color:$focus-color;
     text-transform: uppercase;
-    justify-content: center;
   }
   &--link {
-    display:flex;
     width: 44x;
     height: 44px;
     border-radius: 50%;
     padding: 12px;
     background-color: rgba(255, 255, 255, 0.1);
-    justify-content: center;
-    align-items: center;
     fill:$focus-color;
     &:hover,
     &:focus {
@@ -81,22 +71,12 @@
     }
   }
   }
-  &__form{
-  display:flex;
-  //box-sizing: border-box;
- flex-direction: column;
-  text-align: center;
-  justify-content: center;
   }
   &__newsletter {
     flex-wrap: wrap;
-  display:flex;
-  text-align: center;
   margin-top: 20px;
-  justify-content: center;
   //margin-right: 12px;
   &--input {
-    display:block;
     width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -108,7 +88,6 @@
   }
   }
   &__btn {
-    display:flex;
   position: relative;
   padding: 10px 76px 10px 42px;
   background-color:$main-color;
@@ -119,8 +98,6 @@
   border-radius: 4px;
   border: none;
   //margin-left: 12px;
-  text-align: center;
-  align-items: center;
   &--svg {
     fill:$focus-color;
     width: 24px;
@@ -143,7 +120,4 @@
     letter-spacing: 0.03em;
     color:$focus-color;
     text-transform: uppercase;
-    display:flex;
-    text-align: center;
   }
-}
