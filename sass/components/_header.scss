@@ -33,8 +33,8 @@
     justify-content: space-between;
     height: 80px;
     &__menu {
-    display: none;
-    column-gap: 46px;
+      display:flex;
+    column-gap: 60px;
     justify-content: space-between;
     font-style:$main-font;
     color:$navigation-color;
@@ -59,8 +59,8 @@
     }
     }
     &__contact {
-    display: none;
-    column-gap: 50px;
+    display: block;
+    gap: 50px;
     fill:$navigation-color;
     justify-content: center;
     &--svg {
@@ -84,6 +84,9 @@
         color:$main-color;
       }
     }
+    @include desktop {
+      display: flex;
+    }
     }
     &__nav {
     display: flex;
@@ -98,5 +101,15 @@
     color:$main-color;
   &__first-part {
     color:$secondary-color;
+  }
+}
+@media (max-width: 767px) {
+  .header__menu, .header__contact {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .page-header__svg {
+    display: none;
   }
 }

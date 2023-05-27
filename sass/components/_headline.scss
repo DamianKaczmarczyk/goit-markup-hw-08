@@ -33,20 +33,27 @@
   @include tablet {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/header-tablet.jpg);
-    &__wrapper {
+    &__header {
       padding: 118px 186px;
+    }
+    &__title {
+      max-width:365px;
+      line-height: 42px;
     }
   }
   @include desktop {
     margin: 0 auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/header-desk.jpg);
-    &__wrapper {
+    &__header {
       padding: 200px 0;
     }
     &__title {
       font-size: 44px;
       line-height: 1.36;
+    }
+    &__title{
+      max-width: 100%;
     }
   }
 }

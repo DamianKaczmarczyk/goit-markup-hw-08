@@ -31,10 +31,18 @@
     flex-basis: calc((100% - 2 * 30px) / 3);
     text-align: left;
   }
+  &__link{
+    width: 226px;
+    height: 92px;
+  }
 }
 @include desktop {
   &__items {
     flex-wrap: nowrap;
+  }
+  &__link{
+    width: 170px;
+    height: 92px;
   }
 }
 }

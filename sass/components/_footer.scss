@@ -90,7 +90,7 @@
   }
   &__newsletter {
     flex-wrap: wrap;
-  display:block;
+  display:flex;
   text-align: center;
   margin-top: 20px;
   justify-content: center;
@@ -145,49 +145,5 @@
     text-transform: uppercase;
     display:flex;
     text-align: center;
-  }
-  @include tablet {
-    &__wrapper {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    &__contact {
-      margin-right: 144px;
-    }
-    &__newsletter-input {
-      width: 450px;
-    }
-  }
-  @include desktop {
-    &__wrapper {
-      flex-wrap: nowrap;
-      align-items: baseline;
-      gap: 69px;
-    }
-    &__contact {
-      margin-right: 0;
-    }
-    &__contact,
-    &__social {
-      text-align: left;
-      margin-bottom: 0;
-    }
-    &__contact-items {
-      text-align: left;
-    }
-    &__form {
-      width: 570px;
-      text-align: left;
-    }
-    &__newsletter {
-      flex-direction: row;
-      align-items: baseline;
-    }
-    &__newsletter-input {
-      width: 358px;
-      margin-right: 12px;
-    }
   }
 }

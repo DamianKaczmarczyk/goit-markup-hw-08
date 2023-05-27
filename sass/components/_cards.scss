@@ -1,8 +1,8 @@
 .card {
     display: flex;
     justify-content: center;
-    //flex-wrap: wrap;
-    //gap: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
     &__img {
       position: relative;
       overflow: hidden;
